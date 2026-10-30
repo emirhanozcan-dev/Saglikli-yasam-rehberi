@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Sağlıklı Yaşam Rehberi - Semantik HTML Örneği</title>
+        <meta
+            name="description"
+            content="Semantik HTML yapısı, başlıklar, nav menü, article/section/aside/footer, metin biçimlendirme ve ş
+            steler örneği"
+            />
+        <meta
+            name="keywords"
+            content="HTML, semantik, SEO, header, nav, article, section, aside, footer, liste, paragraf"
+            />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--Not: CSS ile görünüm sonradan eklenecek-->
+    </head>
+    <body>
+        <!--Sayfa Üstü-->
+        <header>
+            <h1>Sağlıklı Yaşam Rehberi</h1>
+            <p><strong>Semantik</strong> etiketlerle düzenlenmiş örnek sayfa.</p>
+        </header>
+
+        <!--Gezinti Menüsü-->
+        <nav aria-label="Ana Menü">
+            <ul>
+                <li><a href="#beslenme">Beslenme</a></li>
+                <li><a href="#egzersiz">Egzersiz</a></li>
+                <li><a href="#uyku">Uyku</a></li>
+                <li><a href="#kaynaklar">Kaynaklar</a></li>
+            </ul>
+        </nav>
+        <!-- ANA İÇERİK-->
+        <main>
+            <article>
+                <header>
+                    <h2>Giriş</h2>
+                </header>
+                
+                <section id="beslenme">
+                    <h3>1 Beslenme</h3>
+                    <p>
+                        Dengeli <em>makro</em> ve <em>mikro</em> besinler için <mark>renkli tabak</mark> yaklaşımını kullanın.
+                        <span id="ipu">İpucu:</span> <code>günlük-su(ml)=kg*35</code>.
+                    </p>
+
+                    <!--Sıralı Liste (Ordered List)-->
+                    <ol start="3" type="I">
+                        <li>Kaliteli Protein</li>
+                        <li>Kompleks Karbonhidrat</li>
+                        <li>Sağlıklı Yağlar</li>
+                    </ol>
+                </section>
+
+                <section id="egzersiz">
+                    <h3>2 Egzersiz</h3>
+                    <p>Haftalık programınızı küçük adımlarla arttırın.</p>
+                    <!--Madde İşaretli Liste (Unordered List)-->
+                    <ul>
+                        <li>Günlük 8000+ adım</li>
+                        <li>Haftada 2 gün kuvvet çalışması</li>
+                        <li>Esneme ve mobilite</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>3 Uyku</h3>
+                    <p>
+                        <u>Düzen</u> ve <strong>karanlık ortam</strong> uyku kalitesini arttırır. <sup>*</sup>Akşam ışıkları kısın, <sub>mavi ışığı</sub> azaltın.
+                    </p>
+                    <!--Ters Sıralı Liste-->
+                    <ol reversed="reversed">
+                        <li>Ekranı kapat</li>
+                        <li>Rahatlama rutini</li>
+                        <li>Sabitleştirilmiş uyku saati</li>
+                    </ol>
+                </section>
+
+                <footer>
+                    <p><small>Bu makale eğitim amaçlı hazırlanmıştır.</small></p>
+                </footer>
+            </article>
+        </main>
+
+        <!--Sayfa Kenarı-->
+        <aside>
+            <h4>Mini Notlar</h4>
+            <p>
+                <b>H1 sadece bir kez</b> kullanılmalı; alt başlıklar için <strong>h2-h6</strong>.
+            </p>
+            <p>
+                <i>Semantik etiketler</i> arama motorlarına içeriği daha iyi açıklar.
+            </p>
+        </aside>
+
+        <!--Sayfa Altı-->
+        <footer>
+            <p>
+                &copy; 2026 Sağlık Dersi Web Dersi | 
+                <a href="#kaynaklar" id="kaynaklar">Kaynaklar</a>
+            </p>
+        </footer>
+    </body>
+</html>
